@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - RevoU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <img src="Revou-alasan.original.png" alt="RevoU Logo">
+        </div>
+        <div class="welcome-text">
+            <h1>Hi Harfi, Welcome to Website</h1>
+            <p>This is your first website powered by RevoU</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#message">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h2>Welcome to Our Website</h2>
+        <p>Explore our services and contact us below.</p>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="headquarter">
+        <h2>Our Headquarters</h2>
+        <div class="locations">
+            <div class="location">Jakarta</div>
+            <div class="location">Bandung</div>
+            <div class="location">Surabaya</div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Our Portfolio</h2>
+        <p>Check out our amazing projects and collaborations.</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="message" class="contact-form">
+        <h2>Message Us</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message here..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Display Submitted Message -->
+        <div id="submittedMessage"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 RevoU | Designed by Harfi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
